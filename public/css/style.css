@@ -54,6 +54,7 @@ body {
 /* Class Nav Starts Here */
 
 .nav {
+    display: inline;
     padding-top: 15px;
 }
 
@@ -69,20 +70,11 @@ a {
     border-radius: 15%;
 }
 
-.nav a:active {
-    color: black;
-    text-decoration: underline;
-}
-
 a:hover {
     color: black;
     text-decoration: underline;
 }
 
-form {
-    padding: 0.7rem;
-    font-size: 1.5rem;
-}
 
 input {
     height: 2.5rem;
@@ -93,6 +85,13 @@ input {
     font-size: 1.1rem;
 }
 
+.search{
+    background-color: #dceafa;
+    border: 2px solid #92c3fe;
+    box-shadow: 2px 2px 5px #90c2fe;
+    height: 2.5rem;
+    width: 2.5rem;
+}
 
 /* Class Nav Ends Here  */
 
@@ -103,6 +102,11 @@ input {
 .main {
     flex: 1;    /* For footer */
     text-align: center;
+}
+
+form {
+    padding: 0.7rem;
+    font-size: 1.5rem;
 }
 
 .form{
@@ -153,6 +157,7 @@ input {
 
 /* About & Contact Page Starts Here  */
 #about {
+    padding: 0 20px;
     color: #5b81af;
     text-align: left;
     max-width: 650px;
@@ -169,6 +174,7 @@ input {
 }
 
 .contact {
+    padding: 0 2%;
     text-align: center;
     max-width: 650px;
     margin: 0 auto;
@@ -193,3 +199,31 @@ label{
 }
 
 /* Class Footer Ends Here */
+
+
+/* For mobile  */
+@media only screen and (min-width: 300px) and (max-width: 765px) {
+.nav {
+    display: none;
+}
+
+.nav-wish{
+    padding: 5rem 0 0 0;
+}
+
+#wish {
+    font-size: 2.5rem;
+}
+
+#date {
+   font-size: 1rem;
+}
+
+.city-icon h1 {
+    font-size: 1rem;
+}
+
+.city-icon img{
+    width: 3.5rem;
+}
+}
