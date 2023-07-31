@@ -1,0 +1,195 @@
+/* Body and Everything */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#ebf2fa, #c7e0fd, #89befe);
+    padding: 0;
+    margin: 0;
+}
+
+/* Body and Everything Ends Here */
+
+/* Scrollbar Starts Here. It does not work in firefox or edge in prior version 79. */
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #b0c1cf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5b81af;
+    border-radius: 10%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #738ec3;
+}
+
+/* Scrollbar Ends Here */
+
+/* Class Container Starts Here */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Class Nav Starts Here */
+
+.nav {
+    padding-top: 15px;
+}
+
+.nav-bar {
+    padding: 1rem;
+}
+
+a {
+    color: #5b81af;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    text-decoration: none;
+    border-radius: 15%;
+}
+
+.nav a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+form {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+}
+
+input {
+    height: 2.5rem;
+    border: 2px solid #92c3fe;
+    width: 13rem;
+    box-shadow: 2px 2px 5px #90c2fe;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+/* Class Nav Ends Here  */
+
+
+/* Class Main Starts Here */
+
+/* Index Page Starts Here  */
+.main {
+    flex: 1;    /* For footer */
+    text-align: center;
+}
+
+.form{
+   position: absolute;
+   right: 10px;
+}
+
+#wish {
+    color: #5b81af;
+    font-size: 5rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+#date {
+    color: #5b81af;
+    padding: 0;
+    margin: 0;
+}
+
+.city-icon h1, .city-icon img {
+    color: #5b81af;
+    display: inline;
+    vertical-align: middle;
+}
+
+.temp{
+    display: flex;
+    justify-content: center;
+}
+
+.temp-details{
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.weather-content{
+    color: #526a95;
+    width: 260px;
+    height: 170px;
+    border: 2px solid #738cb4;
+}
+
+/* Index Page Ends Here  */
+
+/* About & Contact Page Starts Here  */
+#about {
+    color: #5b81af;
+    text-align: left;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.about-contact-h1 {
+    color: #5b81af;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contact {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+label{
+    color: #5b81af;
+    display: inline;
+    font-weight: bold;
+}
+
+/* About & Contact Page Ends Here  */
+
+/* Class Footer Starts Here */
+
+.footer {
+    padding: 1.5rem;
+    text-align: center;
+    color: #506885;
+}
+
+/* Class Footer Ends Here */

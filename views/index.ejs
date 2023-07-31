@@ -1,0 +1,79 @@
+<%- include("partials/header") %>
+    <div class="form">
+        <form action="/" method="post">
+            <label for="changeCityName"><input type="text" name="cityName" placeholder="Enter City"></label>
+        </form>
+    </div>
+
+    <div class="nav-wish">
+        <h2 id="wish"></h2>
+        <h2 id="date"></h2>
+    </div>
+
+    <div class="city-icon">
+        <% if(details === "City Not Found. Check your spelling."){  %>
+            <h1>"City Not Found. Check your spelling."</h1>
+        <% }else{ %> 
+        <h1><%= currentCity %></h1>
+        <img id="icon" src="https://openweathermap.org/img/wn/<%= details.weather[0].icon %>@2x.png">
+        
+    </div>
+
+    <div class="temp">
+
+        <div class="temp-details">
+
+            <div class="weather-content">
+                <h3>Feels Like</h3>
+                <p><span>Feels Like:</span>
+                    <%= details.main.feels_like %>Celsius
+                </p>
+                <p><span>Humidity:</span>
+                   <%= details.main.humidity %>%
+                </p>
+            </div>
+
+            <div class="weather-content">
+                <h3>Temperature</h3>
+                <p><span>Min. Temperature:</span>
+                    <%= details.main.temp_min %>Celsius
+                </p>
+                <p><span>Max. Temperature:</span>
+                    <%= details.main.temp_max %>Celsius
+                </p>
+            </div>
+
+            <div class="weather-content">
+                <h3>Visibility</h3>
+
+                <p><span>Visibility:</span>
+                    <%= details.visibility %>meters
+                </p>
+            </div>
+
+            <div class="weather-content">
+                <h3>Wind</h3>
+
+                <p><span>Wind Speed:</span>
+                    <%= details.wind.speed %>meters/second
+                </p>
+                <p><span>Wind Degree:</span>
+                    <%= details.wind.deg %>deg
+                </p>
+            </div>
+
+            <div class="weather-content">
+                <h3>Clouds</h3>
+                <p> <span>Clouds:</span>
+                    <%= details.clouds.all %>
+                </p>
+                <p><span>Pressure:</span>
+                   <%= details.main.pressure %>hPa
+                </p>
+            </div>
+           
+        </div>
+
+    </div>
+    <% } %>
+    <%- include("partials/footer") %>
