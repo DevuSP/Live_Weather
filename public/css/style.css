@@ -18,6 +18,91 @@ body {
 
 /* Body and Everything Ends Here */
 
+/* Burger menu starts here. */
+#menu-bar {
+    position: fixed;
+    width: 45px;
+    height: 35px;
+    margin: 30px 0 0 30px;
+    z-index: 6;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(71, 71, 177);
+    display: block;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-6px);
+}
+
+#bar3 {
+    transform: translateY(6px);
+}
+
+.nav {
+    padding: 0;
+    transition: 1s ease;
+    display: none;
+}
+
+.nav li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.1s ease;
+}
+
+.nav li {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.nav li a:hover {
+    color: #526a95;
+    font-size:  xx-large;
+    background-color: #c7e0fd;
+    border: 2px solid aliceblue;
+}
+
+/* Class to be added after click to the buurger */
+
+.icon .bar {
+    background-color: rgb(172, 208, 240);
+}
+
+.icon #bar1 {
+    transform: translateY(4px) rotate(-45deg);
+}
+
+.icon #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.icon #bar2 {
+    opacity: 0;
+}
+
+.change {
+    margin: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(86, 69, 48);
+    width: 20%;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+/* Burger menu ends here. */
 /* Scrollbar Starts Here. It does not work in firefox or edge in prior version 79. */
 
 /* width */
@@ -51,18 +136,7 @@ body {
     min-height: 100vh;
 }
 
-/* Class Nav Starts Here */
-
-.nav {
-    display: inline;
-    padding-top: 15px;
-}
-
-.nav-bar {
-    padding: 1rem;
-}
-
-a {
+.main a {
     color: #5b81af;
     font-size: 1.5rem;
     padding: 0.7rem;
@@ -70,7 +144,7 @@ a {
     border-radius: 15%;
 }
 
-a:hover {
+.main a:hover {
     color: black;
     text-decoration: underline;
 }
@@ -202,28 +276,75 @@ label{
 
 
 /* For mobile  */
-@media only screen and (min-width: 300px) and (max-width: 765px) {
-.nav {
-    display: none;
+/* For mobile  */
+@media only screen and (max-width: 1000px) {
+    .nav {
+        width: 40%;
+    }
+
+    .nav-wish {
+        padding: 5rem 0 0 0;
+    }
+
+    input{
+        width: 11rem;
+        height: 2rem;
+    }
+
+    .search{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    #wish {
+        font-size: 4.5rem;
+    }
+
+    #date {
+        font-size: 1.5rem;
+    }
+
+    .city-icon h1 {
+        font-size: 1.5rem;
+    }
+
+    .city-icon img {
+        width: 4.0rem;
+    }
 }
 
-.nav-wish{
-    padding: 5rem 0 0 0;
-}
+@media only screen and (max-width: 500px) {
+    .nav {
+        width: 100%;
+    }
 
-#wish {
-    font-size: 2.5rem;
-}
+    .nav-wish {
+        padding: 5rem 0 0 0;
+    }
 
-#date {
-   font-size: 1rem;
-}
+    input{
+        width: 10rem;
+        height: 2rem;
+    }
 
-.city-icon h1 {
-    font-size: 1rem;
-}
+    .search{
+        height: 2rem;
+        width: 2rem;
+    }
 
-.city-icon img{
-    width: 3.5rem;
-}
+    #wish {
+        font-size: 2.5rem;
+    }
+
+    #date {
+        font-size: 1rem;
+    }
+
+    .city-icon h1 {
+        font-size: 1rem;
+    }
+
+    .city-icon img {
+        width: 3.5rem;
+    }
 }

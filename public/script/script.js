@@ -23,3 +23,9 @@ if (currentHr < 12) {
 
 document.getElementById("wish").innerHTML = wish;
 
+// For buurger menu.
+function navigationShow(){
+  document.getElementById("menu-bar").classList.toggle("icon");
+  document.getElementById("nav").classList.toggle("change");
+
+}
