@@ -1,4 +1,5 @@
 <%- include("partials/header") %>
+
     <div class="form">
         <form action="/" method="post">
             <label for="changeCityName"><input type="text" name="cityName" placeholder="Enter City"><button class="search" type="submit">&#128269</button></label>
@@ -64,11 +65,11 @@
 
             <div class="weather-content">
                 <h3>Clouds</h3>
-                <p> <span>Clouds:</span>
-                    <%= details.clouds.all %>
-                </p>
                 <p><span>Pressure:</span>
                    <%= details.main.pressure %>hPa
+                </p>
+                <p> <span>Clouds:</span>
+                    <%= details.clouds.all %>
                 </p>
             </div>
            

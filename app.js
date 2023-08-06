@@ -42,6 +42,14 @@ app.get("/contact", (req, res) => {
     res.render("contact.ejs")
 })
 
+app.get("/gallery", (req, res) => {
+    res.render("gallery.ejs")
+})
+
+app.get("/help", (req, res) => {
+    res.render("help.ejs")
+})
+
 app.post("/", (req, res) => {
     if (req.body.cityName != "") { nameOfCity = req.body.cityName }
     res.redirect("/");
