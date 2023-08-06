@@ -260,12 +260,6 @@ form {
     line-height: 3rem;
 }
 
-label{
-    color: #5b81af;
-    display: inline;
-    font-weight: bold;
-}
-
 /* About & Contact Page Ends Here  */
 
 /* Class Footer Starts Here */
@@ -301,9 +295,6 @@ label{
         width: 2rem;
     }
     
-    #wish {
-    }
-
     #date {
         font-size: 1.5rem;
     }

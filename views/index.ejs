@@ -2,7 +2,8 @@
 
     <div class="form">
         <form action="/" method="post">
-            <label for="changeCityName"><input type="text" name="cityName" placeholder="Enter City"><button class="search" type="submit">&#128269</button></label>
+            <input type="text" name="cityName" placeholder="Enter City" autocomplete="off"><button class="search"
+                type="submit">&#128269</button>
         </form>
     </div>
 
@@ -12,12 +13,14 @@
     </div>
 
     <div class="city-icon">
-        <% if(details === "City Not Found. Check your spelling."){  %>
+        <% if(details==="City Not Found. Check your spelling." ){ %>
             <h1>"City Not Found. Check your spelling."</h1>
-        <% }else{ %> 
-        <h1><%= currentCity %></h1>
-        <img id="icon" src="https://openweathermap.org/img/wn/<%= details.weather[0].icon %>@2x.png">
-        
+            <% }else{ %>
+                <h1>
+                    <%= currentCity %>
+                </h1>
+                <img id="icon" src="https://openweathermap.org/img/wn/<%= details.weather[0].icon %>@2x.png">
+
     </div>
 
     <div class="temp">
@@ -30,7 +33,7 @@
                     <%= details.main.feels_like %>Celsius
                 </p>
                 <p><span>Humidity:</span>
-                   <%= details.main.humidity %>%
+                    <%= details.main.humidity %>%
                 </p>
             </div>
 
@@ -66,15 +69,15 @@
             <div class="weather-content">
                 <h3>Clouds</h3>
                 <p><span>Pressure:</span>
-                   <%= details.main.pressure %>hPa
+                    <%= details.main.pressure %>hPa
                 </p>
                 <p> <span>Clouds:</span>
                     <%= details.clouds.all %>
                 </p>
             </div>
-           
+
         </div>
 
     </div>
     <% } %>
-    <%- include("partials/footer") %>
+        <%- include("partials/footer") %>
