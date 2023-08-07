@@ -7,14 +7,14 @@
         </form>
     </div>
 
-    <div class="nav-wish">
+    <div class="main-wish">
         <h2 id="wish"></h2>
         <h2 id="date"></h2>
     </div>
 
     <div class="city-icon">
-        <% if(details==="City Not Found. Check your spelling." ){ %>
-            <h1>"City Not Found. Check your spelling."</h1>
+        <% if(details==="error" ){ %>
+            <h1> <%= errorMessage %> </h1>
             <% }else{ %>
                 <h1>
                     <%= currentCity %>

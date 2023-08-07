@@ -29,7 +29,8 @@ app.get("/", async (req, res) => {
     } catch (error) {
         console.error(error.message)
         res.render("index.ejs", {
-            details: "City Not Found. Check your spelling.",
+            details: "error",
+            errorMessage: error.message,
         })
     };
 })
