@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
-    
+    --burger-menu-color: rgb(86, 69, 48);
+    --text-color: #2c5587;
+    --dark-text-color: #2c5587;
+    --light-blue-color: #92c3fe;
 }
 
 body {
@@ -31,7 +34,7 @@ body {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background-color: rgb(71, 71, 177);
+    background-color: var(--text-color);
     display: block;
     transition: 0.3s ease;
 }
@@ -50,16 +53,16 @@ body {
     display: none;
 }
 
+.nav li {
+    list-style: none;
+    padding: 20px 0;
+}
+
 .nav li a {
     color: aliceblue;
     text-decoration: none;
     padding: 10px 20px;
     transition: 0.1s ease;
-}
-
-.nav li {
-    list-style: none;
-    padding: 20px 0;
 }
 
 .nav li a:hover {
@@ -93,7 +96,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(86, 69, 48);
+    background-color: var(--burger-menu-color);
     width: 20%;
     font-size: 25px;
     position: absolute;
@@ -116,7 +119,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #5b81af;
+    background: var(--text-color);
     border-radius: 10%;
 }
 
@@ -136,13 +139,13 @@ body {
 }
 
 .main a {
-    color: #5b81af;
+    color: var(--text-color);
     font-size: 1.5rem;
     text-decoration: none;
 }
 
 label{
-    color: #2c5587;
+    color: var(--dark-text-color);
     font-weight: 700;
 }
 
@@ -154,19 +157,29 @@ label{
 
 input {
     height: 2.5rem;
-    border: 2px solid #92c3fe;
     width: 13rem;
-    box-shadow: 2px 2px 5px #90c2fe;
+    color: var(--text-color);
     text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--light-blue-color);
+    background-color: #e6effa;
     font-size: 1.1rem;
+}
+
+input:focus{
+    border-bottom: 4px solid var(--dark-text-color);
 }
 
 .search{
     background-color: #dceafa;
-    border: 2px solid #92c3fe;
-    box-shadow: 2px 2px 5px #90c2fe;
+    border: 2px solid var(--light-blue-color);
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.search:focus {
+    border: 3px solid var(--dark-text-color);
 }
 
 /* Class Nav Ends Here  */
@@ -192,20 +205,20 @@ form {
 }
 
 #wish {
-    color: #5b81af;
+    color: var(--text-color);
     font-size: 5rem;
     margin-bottom: 0;
     margin-top: 5px;
 }
 
 #date {
-    color: #5b81af;
+    color: var(--text-color);
     padding: 0;
     margin: 0;
 }
 
 .city-icon h1, .city-icon img {
-    color: #5b81af;
+    color: var(--text-color);
     display: inline;
     vertical-align: middle;
 }
