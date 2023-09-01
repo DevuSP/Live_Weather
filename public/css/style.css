@@ -6,8 +6,6 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
-    --burger-menu-color: rgb(86, 69, 48);
-    --text-color: #2c5587;
     --dark-text-color: #2c5587;
     --light-blue-color: #92c3fe;
 }
@@ -34,7 +32,7 @@ body {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background-color: var(--text-color);
+    background-color: var(--dark-text-color);
     display: block;
     transition: 0.3s ease;
 }
@@ -90,18 +88,18 @@ body {
 }
 
 .change {
-    margin: 0;
-    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--burger-menu-color);
-    width: 20%;
-    font-size: 25px;
     position: absolute;
     top: 0;
+    margin: 0;
+    z-index: 5;
+    width: 20%;
+    font-size: 25px;
     height: 100vh;
+    background-color: var(--dark-text-color);
 }
 
 /* Burger menu ends here. */
@@ -119,7 +117,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--text-color);
+    background: var(--dark-text-color);
     border-radius: 10%;
 }
 
@@ -139,7 +137,7 @@ body {
 }
 
 .main a {
-    color: var(--text-color);
+    color: var(--dark-text-color);
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -158,7 +156,7 @@ label{
 input {
     height: 2.5rem;
     width: 13rem;
-    color: var(--text-color);
+    color: var(--dark-text-color);
     text-align: center;
     outline: none;
     border: none;
@@ -205,20 +203,20 @@ form {
 }
 
 #wish {
-    color: var(--text-color);
+    color: var(--dark-text-color);
     font-size: 5rem;
     margin-bottom: 0;
     margin-top: 5px;
 }
 
 #date {
-    color: var(--text-color);
+    color: var(--dark-text-color);
     padding: 0;
     margin: 0;
 }
 
 .city-icon h1, .city-icon img {
-    color: var(--text-color);
+    color: var(--dark-text-color);
     display: inline;
     vertical-align: middle;
 }
