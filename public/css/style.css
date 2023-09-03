@@ -21,7 +21,7 @@ body {
 
 /* Burger menu starts here. */
 #menu-bar {
-    position: sticky;
+    position: fixed;
     width: 45px;
     height: 35px;
     margin: 30px 0 0 30px;
@@ -92,13 +92,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     margin: 0;
     z-index: 5;
     width: 20%;
     font-size: 25px;
-    height: 100vh;
+    height: clamp(80vh, 100vh, 140vh);
     background-color: var(--dark-text-color);
 }
 
@@ -276,7 +276,7 @@ form {
 /* Class Footer Starts Here */
 
 .footer {
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     color: #506885;
 }
