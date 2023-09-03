@@ -98,7 +98,7 @@ body {
     z-index: 5;
     width: 20%;
     font-size: 25px;
-    height: clamp(80vh, 100vh, 140vh);
+    height: 100vh;
     background-color: var(--dark-text-color);
 }
 
