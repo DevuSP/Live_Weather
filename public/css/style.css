@@ -118,7 +118,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--dark-text-color);
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 /* Handle on hover */
