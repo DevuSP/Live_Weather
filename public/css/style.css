@@ -46,9 +46,21 @@ body {
 }
 
 .nav {
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    z-index: 5;
+    width: 35%;
+    
+    margin: 0;
     transition: 1s ease;
-    display: none;
 }
 
 .nav li {
@@ -88,17 +100,9 @@ body {
 }
 
 .change {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    margin: 0;
-    z-index: 5;
-    width: 20%;
-    font-size: 25px;
-    height: 100vh;
+   
+    
+    left: 0%;
     background-color: var(--dark-text-color);
 }
 
@@ -134,6 +138,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+.main-wish{
+    margin-top: 6rem;
 }
 
 .main a {
